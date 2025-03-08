@@ -24,7 +24,7 @@ const TextTypeTag: React.FC<{ type: string }> = ({ type }) => {
 export const GridCell: React.FC<{ ad: AdVM }> = ({ ad }) => {
   return (
     <div className="shadow-sm bg-white rounded-lg overflow-hidden">
-      <div className="relative  h-50 w-full">
+      <div className="relative  h-42 w-full">
         <AdRenderer ad={ad} />
         {ad.type === "text" ? (
           <TextTypeTag type={ad.type} />
