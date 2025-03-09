@@ -2,8 +2,6 @@ import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 import { AdsApi } from "./AdsApi";
 import { AdVM } from "./types";
 
-// filepath: c:\Users\mrychlik\Desktop\inne\Ads\ad-performance-dashboard\src\api\ads\AdsApi.test.ts
-
 const ADS_API_URL = "https://example.com/api/ads";
 
 const mockAds: AdVM[] = [

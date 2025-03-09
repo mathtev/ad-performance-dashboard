@@ -1,7 +1,7 @@
 import { AdVM } from "../../api";
-import { ImageRenderer } from "../ad-renderer/ImageRenderer";
-import { TextRenderer } from "../ad-renderer/TextRenderer";
-import { VideoRenderer } from "../ad-renderer/VideoRenderer";
+import { ImageRenderer } from "./ImageRenderer";
+import { TextRenderer } from "./TextRenderer";
+import { VideoRenderer } from "./VideoRenderer";
 
 export const renderAd = (ad: AdVM) => {
   switch (ad.type) {
