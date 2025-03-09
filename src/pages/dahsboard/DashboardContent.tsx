@@ -10,7 +10,15 @@ interface DashboardContentProps {
 export const DashboardContent: React.FC<DashboardContentProps> = ({
   filters,
 }) => {
-  const ads = useAds(filters);
+  const { ads, isLoading } = useAds(filters);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p>Loading ads...</p>
+      </div>
+    );
+  }
 
   return (
     <>
