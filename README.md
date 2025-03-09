@@ -26,6 +26,11 @@ npm install
 ```
 
 ## Running the Project
+Create and setup `.env` file with following variable:
+```
+VITE_ADS_API_URL=https://my-json-server.typicode.com/akramsaouri/ad-performance/ads
+```
+
 Start the development server:
 ```
 npm start
