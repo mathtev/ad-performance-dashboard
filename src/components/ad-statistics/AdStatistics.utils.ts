@@ -1,7 +1,6 @@
 import { AdVM } from "../../api";
 
 export const getAdStatistics = (ads: AdVM[]) => {
-  console.log("innnnnnnnnn");
   if (!ads.length) {
     return {
       totalClicks: 0,
